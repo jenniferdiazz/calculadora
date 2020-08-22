@@ -1,0 +1,12 @@
+#display_resultado{
+    display: block;
+    width: 415px;
+    height: 12vh;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size:2.5rem;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border:5px solid $primary;
+    border-radius: 3px;
+}

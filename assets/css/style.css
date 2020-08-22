@@ -5,5 +5,40 @@ assets index.html
 ->luego de verificar, colocaremos el comando 
 sass --watch assets/scss/main.scss:assets/css/style.css 
 */
+.btn {
+  border: 0;
+  height: 100px;
+  width: 100px;
+  background-color: #2196f3;
+  font-size: 2rem;
+  opacity: 0.8;
+  transition: opacity 0.5s, font-size 0.5s, color 0.5;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 1;
+  font-size: 2.5rem;
+  color: #2196f3;
+}
+
+#display_resultado {
+  display: block;
+  width: 415px;
+  height: 12vh;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 2.5rem;
+  padding-right: 30px;
+  box-sizing: border-box;
+  border: 5px solid #2196f3;
+  border-radius: 3px;
+}
+
+.grid_calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */

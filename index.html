@@ -7,6 +7,28 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  
+  <h1>ciclo for</h1>
+  <div id="contenedor"></div>
+  <h2>Lista alumnos</h2>
+  <ul id=lista></ul>
+  <script>
+    var contenedor=document.getElementById("contenedor");
+    var divs="";
+    
+      for(var i=0;i<10;i++){
+        divs=divs +"<div"+" id='"+i +"'>Numero:"+i+"</div>";
+      }
+      contenedor.innerHTML=divs;
+
+      //ejemplo 2
+      var lista=document.getElementById("lista");
+      var alumnos=["Juan","Diego","jorgue","roberto","maria"];
+      var resultado="";
+      for(var i=0;i<alumnos.length;i++){
+        resultado += "<li>"+alumnos[i]+"</li>"
+      } 
+      lista.innerHTML =resultado;
+    
+  </script>
 </body>
 </html>

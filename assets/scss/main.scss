@@ -12,5 +12,12 @@ sass --watch assets/scss/main.scss:assets/css/style.css
 
 //vendor
 
+
 //base
 @import "base/reset";
+
+//components
+@import "components/button";
+@import "components/input";
+//layaout
+@import "layout/grid";

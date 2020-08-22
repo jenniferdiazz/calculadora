@@ -1,0 +1,15 @@
+.btn{
+    border:0;
+    height :100px;
+    width:100px;
+    background-color:$primary;
+    font-size:2rem;
+    opacity: 0.8;
+    transition: opacity .5s, font-size .5s, color .5;
+    cursor: pointer;
+    &:hover{
+        opacity: 1;
+        font-size:2.5rem;
+        color:$primary;
+    }
+}
