@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
-  <h1>ciclo for</h1>
-  <div id="contenedor"></div>
-  <h2>Lista alumnos</h2>
-  <ul id=lista></ul>
-  <script>
-    var contenedor=document.getElementById("contenedor");
-    var divs="";
-    
-      for(var i=0;i<10;i++){
-        divs=divs +"<div"+" id='"+i +"'>Numero:"+i+"</div>";
-      }
-      contenedor.innerHTML=divs;
-
-      //ejemplo 2
-      var lista=document.getElementById("lista");
-      var alumnos=["Juan","Diego","jorgue","roberto","maria"];
-      var resultado="";
-      for(var i=0;i<alumnos.length;i++){
-        resultado += "<li>"+alumnos[i]+"</li>"
-      } 
-      lista.innerHTML =resultado;
-    
-  </script>
+<body onload="init();">
+    <div>
+        <input id="display_resultado" type="text">
+    </div>
+    <div class="grid_calculadora">
+        <button class="btn" id="siete">7</button>
+        <button class="btn" id="ocho">8</button>
+        <button class="btn" id="nueve">9</button>
+        <button class="btn" id="division">/</button>
+        <button class="btn" id="cuatro">4</button>
+        <button class="btn" id="cinco">5</button>
+        <button class="btn" id="seis">6</button>
+        <button class="btn" id="multiplicacion">*</button>
+        <button class="btn" id="uno">1</button>
+        <button class="btn" id="dos">2</button>
+        <button class="btn" id="tres">3</button>
+        <button class="btn" id="resta">-</button>
+        <button class="btn" id="igual">=</button>
+        <button class="btn" id="reset">reset</button>
+        <button class="btn" id="cero">0</button>
+        <button class="btn" id="suma">+</button>
+    </div>
+    <script src="assets/js/calculadora.js"></script>
 </body>
 </html>

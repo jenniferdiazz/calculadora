@@ -51,7 +51,7 @@ function init(){
 
     suma.onclick=function(e){
         operador = "+";
-        resultado= parseInt(display_resultado.value);
+        resultado= resultado+parseInt(display_resultado.value);
         display_resultado.value ="";
     }
     resta.onclick=function(e){
